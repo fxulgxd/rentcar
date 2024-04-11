@@ -1,0 +1,84 @@
+body {
+    padding: 50px 90px;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(30, 90, 124);
+}
+
+.menu:not(:last-child)::after {
+    content: '|';
+    padding: 0 5px;
+}
+
+.a1 {
+    color: #f7941e;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 25px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.flex2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.text {
+    padding: 8px 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #39b54a;
+    border: none;
+    text-align: center;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    margin: auto;
+}
+
+button:hover {
+    background-color: #464a4c;
+}
+
+.btn span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+
+}
